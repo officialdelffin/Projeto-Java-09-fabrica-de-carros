@@ -20,6 +20,7 @@ public class CarMold {
     public void accelerate () {
 
 
+        // Avisa que o carro acelerou :
         System.out.println( name + " acelerou o carro!" );
 
 
@@ -30,6 +31,7 @@ public class CarMold {
     public void brake () {
 
 
+        // Avisa que o carro freiou :
         System.out.println( name + " freiou o carro!" );
 
 
@@ -40,6 +42,7 @@ public class CarMold {
     private void displaysAutonomy () {
 
 
+        // Mostra a autonomia do veiculo :
         System.out.println( "A autonomia do veículo " + name + " foi de " + autonomy );
 
 
