@@ -8,39 +8,39 @@ public class CarMold {
     // Atributos :
 
     // Atributos de todos os carros :
-    protected String name         = "";
-    protected String color        = "";
-    protected int yearOfRelease   = 0;
-    protected int autonomy        = 0;
+    private String name         = "";
+    private String color        = "";
+    private int yearOfRelease   = 0;
+    private int autonomy        = 0;
 
 
     // Métodos :
 
     // Metodo que faz o carro acelerar :
-    protected void accelerate () {
+    public void accelerate () {
 
 
-
+        System.out.println( name + " acelerou o carro!" );
 
 
     }
 
 
     // Metodo que faz o carro freiar :
-    protected void brake () {
+    public void brake () {
 
 
-
+        System.out.println( name + " freiou o carro!" );
 
 
     }
 
 
     // Metodo que exibe a autonomia do carro :
-    protected void displaysAutonomy () {
+    private void displaysAutonomy () {
 
 
-
+        System.out.println( "A autonomia do veículo " + name + " foi de " + autonomy );
 
 
     }
