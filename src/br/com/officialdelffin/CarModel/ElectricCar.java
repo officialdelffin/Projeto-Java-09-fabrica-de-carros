@@ -11,4 +11,19 @@ public class ElectricCar extends CarMold {
 
 
 
+    // Metodos :
+
+    // Sobre escrita do metodo :
+    @Override
+    public void displaysAutonomy () {
+
+
+        //  Exibe a autonomia do veiculo elétrico :
+
+
+
+    }
+
+
+
 }

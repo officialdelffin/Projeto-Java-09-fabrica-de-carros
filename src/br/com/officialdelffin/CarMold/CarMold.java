@@ -39,7 +39,7 @@ public class CarMold {
 
 
     // Metodo que exibe a autonomia do carro :
-    private void displaysAutonomy () {
+    public void displaysAutonomy () {
 
 
         // Mostra a autonomia do veiculo :
@@ -49,4 +49,85 @@ public class CarMold {
     }
 
 
+    // Métodos Getter e Setter :
+
+
+    // Mostra o nome do carro
+    public String getName () {
+
+
+        return name;
+
+
+    }
+
+
+    // Mostra a cor do carro
+    public String getColor () {
+
+
+        return color;
+
+
+    }
+
+
+    // Mostra o ano de lançamento do carro
+    public int getYearOfRelease () {
+
+
+        return yearOfRelease;
+
+
+    }
+
+
+    // Mostra a autonomia do carro
+    public int getAutonomy () {
+
+
+        return autonomy;
+
+
+    }
+
+
+    // Permite colocar o nome no atributo :
+    public void setName( String name ) {
+
+
+        this.name = name;
+
+
+    }
+
+
+    // Permite colocar a cor no atributo :
+    public void setColor( String color ) {
+
+
+        this.color = color;
+
+
+    }
+
+
+    // Permite colocar o ano de lançamento no atributo :
+    public void setYearOfRelease( int yearOfRelease ) {
+
+
+        this.yearOfRelease = yearOfRelease;
+
+
+    }
+
+
+    // Permite colocar a autonomia no atributo :
+    public void setAutonomy( int autonomy ) {
+
+
+        this.autonomy = autonomy;
+
+
+    }
 }
