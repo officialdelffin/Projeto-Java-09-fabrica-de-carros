@@ -10,7 +10,8 @@ public class CarMold {
     // Atributos de todos os carros :
     protected String name         = "";
     protected String color        = "";
-    protected  int yearOfRelease  = 0;
+    protected int yearOfRelease   = 0;
+    protected int autonomy        = 0;
 
 
     // Métodos :
@@ -34,6 +35,15 @@ public class CarMold {
 
     }
 
+
+    // Metodo que exibe a autonomia do carro :
+    protected void displaysAutonomy () {
+
+
+
+
+
+    }
 
 
 }
