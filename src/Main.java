@@ -63,11 +63,11 @@ public class Main {
 
 
             // Pede o nome do modelo do carro :
-            System.out.println( "Primeiro, digite o modelo do carro :" );
+            System.out.println( "Primeiro, digite o modelo do carro : \n" );
 
 
             // Armazena a cor do carro :
-            electricCar.setColor( userInput.nextLine() );
+            electricCar.setName( userInput.nextLine() );
             userInput.nextLine();
 
 
@@ -89,7 +89,7 @@ public class Main {
 
 
             // Pede a autonomia do carro :
-            System.out.println( "Por ultimo para criar o carro, digite a autonomia do carro : " );
+            System.out.println( "Por ultimo para criar o carro, digite a autonomia do carro : \n" );
 
 
             // Armazena a autonomia do carro :
@@ -161,26 +161,12 @@ public class Main {
             }
 
 
+            // Dando espaço para ficar organizado no terminal :
+            System.out.println( " " );
+
+
             // Informar que saiu do carro :
             System.out.println( "Saida do carro com sucesso!" );
-
-
-        }
-
-
-        // Se a escolha do usuário for 2 :
-        else if ( userChoice == 2 ) {
-
-
-
-
-        }
-
-
-        // Se não for nenhum dos dois :
-        else {
-
-
 
 
         }
