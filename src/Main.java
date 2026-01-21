@@ -4,15 +4,87 @@
  para especializar comportamentos e sobrescrita para funcionalidades específicas de cada modelo. Foco em POO e reúso de código. */
 
 
+import br.com.officialdelffin.CarModel.ElectricCar;
+
+import java.util.Scanner;
+
 // Classe de execução do sistema : :
 public class Main {
 
 
-    // Metodo que executa o sistema :
+    // Objetos :
+
+    // Permite o input do usuário :
+    static Scanner userInput = new Scanner( System.in );
+
+
+    // Atributos :
+
+    // Armazena escolha do usuário :
+    static int userChoice = 0;
+
+
+    // Métodos :
+
+    // Executa o sistema principal :
     public static void main( String[] args ) {
 
 
+        // Apresentações :
+        System.out.println( "Olá seja bem vindo à nossa fábrica de carros! \n" );
 
+
+        // Mostrando as opções disponíveis :
+        System.out.print( """
+                
+                Digite o número do tipo de carro você deseja criar :
+                
+                1 - Carro elétrico
+                2 - Carro à combustão
+                
+                """  );
+
+
+        // Armazena a escolha do usuário :
+        userChoice = userInput.nextInt();
+
+
+        // Se a escolha do usuário for 1 :
+        if ( userChoice == 1 ) {
+
+
+            // Faz a instancia do objeto carroEletríco :
+            ElectricCar electricCar = new ElectricCar();
+
+
+            // Pede o usuário para falar o ano que estamos :
+            System.out.println( "Digite o ano em que estamos : " );
+
+
+            // Armazena o ano que estamos que vai ser o ano de lançamento do carro :
+            electricCar.setYearOfRelease( userInput.nextInt() );
+
+
+
+        }
+
+
+        // Se a escolha do usuário for 2 :
+        else if ( userChoice == 2 ) {
+
+
+
+
+        }
+
+
+        // Se não for nenhum dos dois :
+        else {
+
+
+
+
+        }
 
 
     }
