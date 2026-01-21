@@ -152,17 +152,17 @@ public class Main {
 
 
                     // O número que você escreveu não está disponível :
+                    System.out.println( "O número " + carChoice + " não está disponível" );
 
 
                 }
 
+
             }
 
 
-
-
-
-
+            // Informar que saiu do carro :
+            System.out.println( "Saida do carro com sucesso!" );
 
 
         }
