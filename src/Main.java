@@ -22,6 +22,7 @@ public class Main {
 
     // Armazena escolha do usuário :
     static int userChoice = 0;
+    static int carChoice  = 1;
 
 
     // Métodos :
@@ -67,6 +68,7 @@ public class Main {
 
             // Armazena a cor do carro :
             electricCar.setColor( userInput.nextLine() );
+            userInput.nextLine();
 
 
             // Dando espaço para ficar organizado no terminal :
@@ -79,6 +81,7 @@ public class Main {
 
             // Armazena o ano que estamos que vai ser o ano de lançamento do carro :
             electricCar.setYearOfRelease( userInput.nextInt() );
+            userInput.nextLine();
 
 
             // Dando espaço para ficar organizado no terminal :
@@ -91,6 +94,7 @@ public class Main {
 
             // Armazena a autonomia do carro :
             electricCar.setAutonomy( userInput.nextInt() );
+            userInput.nextLine();
 
 
             // Dando espaço para ficar organizado no terminal :
@@ -99,6 +103,62 @@ public class Main {
 
             // Fecado que o carro foi criado :
             System.out.println( "O veículo " + electricCar.getName() + " foi criado com sucesso!" );
+
+
+            while ( carChoice != 3 ) {
+
+
+                // Pergunta o que o usuário deseja fazer com o carro :
+                System.out.printf("""
+                    
+                    Digite número do que você deseja fazer com o veículo : %s
+                    
+                    1 - Acelarar
+                    2 - Freiar
+                    3 - Sair
+                    
+                    """ , electricCar.getName() );
+
+
+                // Armazena a escolha do usuário :
+                carChoice = userInput.nextInt();
+                userInput.nextLine();
+
+
+                // Se a escolhar for acelerar :
+                if ( carChoice == 1 ) {
+
+
+                    // Executa o metodo de acelerar :
+                    electricCar.accelerate();
+
+
+                }
+
+
+                // Se a escolhar for freiar
+                else if ( carChoice == 2 ) {
+
+
+                    // Executa o metodo de freiar :
+                    electricCar.brake();
+
+
+                }
+
+
+                // Se nenhum dos outros números forem escolhida ele avisa para tentar novamente :
+                else if ( carChoice >= 4 ) {
+
+
+                    // O número que você escreveu não está disponível :
+
+
+                }
+
+            }
+
+
 
 
 
