@@ -49,6 +49,10 @@ public class Main {
         userChoice = userInput.nextInt();
 
 
+        // Dando espaço para ficar organizado no terminal :
+        System.out.println( " " );
+
+
         // Se a escolha do usuário for 1 :
         if ( userChoice == 1 ) {
 
@@ -57,12 +61,47 @@ public class Main {
             ElectricCar electricCar = new ElectricCar();
 
 
+            // Pede o nome do modelo do carro :
+            System.out.println( "Primeiro, digite o modelo do carro :" );
+
+
+            // Armazena a cor do carro :
+            electricCar.setColor( userInput.nextLine() );
+
+
+            // Dando espaço para ficar organizado no terminal :
+            System.out.println( " " );
+
+
             // Pede o usuário para falar o ano que estamos :
-            System.out.println( "Digite o ano em que estamos : " );
+            System.out.println( "Digite o ano em que estamos : \n" );
 
 
             // Armazena o ano que estamos que vai ser o ano de lançamento do carro :
             electricCar.setYearOfRelease( userInput.nextInt() );
+
+
+            // Dando espaço para ficar organizado no terminal :
+            System.out.println( " " );
+
+
+            // Pede a autonomia do carro :
+            System.out.println( "Por ultimo para criar o carro, digite a autonomia do carro : " );
+
+
+            // Armazena a autonomia do carro :
+            electricCar.setAutonomy( userInput.nextInt() );
+
+
+            // Dando espaço para ficar organizado no terminal :
+            System.out.println( " " );
+
+
+            // Fecado que o carro foi criado :
+            System.out.println( "O veículo " + electricCar.getName() + " foi criado com sucesso!" );
+
+
+
 
 
 
